@@ -1,0 +1,122 @@
+/* .step-section {
+  margin: 20px 0;
+} */
+
+.dependency-select-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dependency-search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.dependency-search-input:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.category-select, .dependency-select, .version-select {
+  font-size: 14px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.selected-dependencies {
+  margin-top: 20px;
+}
+
+.selected-dependencies h3 {
+  margin-bottom: 10px;
+}
+
+.dependency-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px; /* space between columns and rows */
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.dependency-list li {
+  background-color: #e0f2fe;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #0f172a;
+  word-break: break-word; /* if names are too long */
+}
+
+.add-btn-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+  margin-top: 16px;
+}
+
+.dependency-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: #f9fafb;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #fee2e2;
+}

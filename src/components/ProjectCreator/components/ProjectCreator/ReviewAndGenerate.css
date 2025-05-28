@@ -1,0 +1,42 @@
+.review-section {
+  padding: 20px;
+}
+
+.review-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.review-item {
+  font-size: 16px;
+  color: #374151;
+  padding: 5px 0;
+}
+
+.generate-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: #6d28d9;
+}

@@ -1,0 +1,177 @@
+.erd-entity-box {
+  position: absolute;
+  background-color: white;
+  border: 2px solid #4a5568;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: move;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.erd-entity-box.selected {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+}
+
+.erd-entity-box.dragging {
+  opacity: 0.8;
+}
+
+.erd-entity-header {
+  background-color: #4a5568;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.erd-entity-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.erd-entity-header input {
+  background-color: white;
+  color: #2d3748;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.erd-entity-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.erd-entity-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.erd-entity-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.erd-entity-attributes {
+  padding: 8px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.erd-attribute-item {
+  display: flex;
+  padding: 4px 0;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 14px;
+  align-items: center;
+}
+
+.erd-attribute-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.erd-key-icon {
+  color: #f6ad55;
+  font-size: 12px;
+}
+
+.erd-attribute-type {
+  color: #718096;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.erd-attribute-constraints {
+  display: flex;
+  gap: 4px;
+}
+
+.erd-constraint {
+  background-color: #e2e8f0;
+  color: #4a5568;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.erd-attribute-actions {
+  visibility: hidden;
+  margin-left: 4px;
+}
+
+.erd-attribute-item:hover .erd-attribute-actions {
+  visibility: visible;
+}
+
+.erd-attribute-btn {
+  background: none;
+  border: none;
+  color: #e53e3e;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+}
+
+.add-attribute-btn {
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 4px;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-top: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.erd-add-attribute-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.erd-attribute-editor {
+  background-color: #f7fafc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.erd-attribute-editor input,
+.erd-attribute-editor select {
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.erd-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.erd-checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}

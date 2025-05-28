@@ -1,0 +1,11 @@
+.home-hero {
+    position: relative; /* Ensure proper positioning for the overlay */
+    min-height: 100vh;
+    background: url('../../../../public/hero-bg.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* overflow: hidden; */
+}
+

@@ -1,0 +1,20 @@
+.lld-relationship-line {
+  cursor: pointer;
+  transition: stroke 0.2s;
+}
+
+.lld-relationship-line.selected path {
+  stroke: #3498db;
+}
+
+.lld-relationship-line.selected .lld-arrowhead {
+  stroke: #3498db;
+}
+
+.lld-relationship-line.selected .lld-arrowhead.composition {
+  fill: #3498db;
+}
+
+.lld-arrowhead {
+  transition: stroke 0.2s, fill 0.2s;
+}

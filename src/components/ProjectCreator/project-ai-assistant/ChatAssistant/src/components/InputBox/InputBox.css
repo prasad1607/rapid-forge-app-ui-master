@@ -1,0 +1,50 @@
+.input-box {
+    display: flex;
+    align-items: flex-start; /* Align items from top */
+    gap: 10px;
+    width: 100%;
+    padding-top: 2px;
+  }
+  
+  .input-textarea {
+    flex-grow: 1;
+    resize: none;
+    overflow: auto;
+    max-height: 120px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    min-height: 44px; /* Initial height */
+    background-color: var(--input-background);
+    color: var(--text-color);
+    transition: height 0.2s ease;
+  }
+  
+  .input-box button {
+    height: 44px; /* Fixed height */
+    padding: 0 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-shrink: 0;
+  
+    /* Vertically center inside container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .stop:hover:not(:disabled) {
+    background-color: #a71d2a;
+  }
+  

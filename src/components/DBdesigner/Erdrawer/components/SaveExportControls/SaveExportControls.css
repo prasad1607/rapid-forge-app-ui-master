@@ -1,0 +1,68 @@
+.erd-save-export-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.erd-controls-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.erd-controls-section h3 {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 0;
+}
+
+.erd-control-btn {
+  background-color: #4299e1;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.erd-control-btn:hover {
+  background-color: #3182ce;
+}
+
+.erd-save-btn {
+  background-color: #48bb78;
+}
+
+.erd-save-btn:hover {
+  background-color: #38a169;
+}
+
+.erd-load-btn {
+  background-color: #4299e1;
+}
+
+.erd-load-btn:hover {
+  background-color: #3182ce;
+}
+
+.erd-export-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.erd-export-btn {
+  flex: 1;
+  background-color: #9f7aea;
+}
+
+.erd-export-btn:hover {
+  background-color: #805ad5;
+}

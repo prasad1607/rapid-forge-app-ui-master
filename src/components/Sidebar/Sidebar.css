@@ -1,0 +1,14 @@
+.sidebar {
+    width: 220px;
+    background-color: #F3F4F6;
+    transition: width 0.3s;
+    overflow: hidden;
+  }
+  
+  .sidebar-collapsed {
+    width: 70px;
+  }
+  
+  .sidebar-nav {
+    padding: 20px 0;
+  }

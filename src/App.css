@@ -1,0 +1,51 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to bottom, #F9FAFB, #FFFFFF);
+  overflow-y: auto;
+}
+
+/* Floating Chat Button */
+.chat-assistant-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chat-assistant-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  width: 500px;
+  height: 800px;
+  background-color: var(--background-color);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}

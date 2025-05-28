@@ -1,0 +1,9 @@
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }

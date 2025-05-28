@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  align-items: center; /* Vertical center */
+  justify-content: space-between;
+  height: 80px;
+  background-color: #2563eb;
+  padding: 0 20px;
+  color: white;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex-grow: 1; /* Title gets flexible center space */
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.collapse-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #D1D5DB;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+}
+
+.search-container {
+  margin-right: 20px;
+}
+
+.header-search-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #D1D5DB;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.account-container {
+  display: flex;
+  align-items: center;
+}
+
+.account-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #7C3AED;
+  border: 1px solid #D1D5DB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 10px;
+}
+
+.account-label {
+  font-size: 16px;
+}

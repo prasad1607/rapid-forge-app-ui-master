@@ -1,0 +1,50 @@
+.relationships-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .relationship-line {
+    stroke: #000;
+    stroke-width: 2;
+  }
+  
+  .relationship-line.dashed {
+    stroke-dasharray: 5,5;
+  }
+  
+  .relationship-arrow {
+    fill: #000;
+  }
+  
+  .relationship-label {
+    text-anchor: middle;
+    fill: #000;
+    font-size: 12px;
+    background-color: white;
+  }
+  
+  .relationship.selected .relationship-line,
+  .relationship.selected .relationship-arrow,
+  .relationship.selected .relationship-label {
+    stroke: #3b82f6;
+    fill: #3b82f6;
+  }
+  
+  .drawing-line {
+    stroke: #777;
+    stroke-width: 2;
+  }
+  
+  .drawing-line.dashed {
+    stroke-dasharray: 5,5;
+  }
+  
+  .drawing-label {
+    text-anchor: middle;
+    fill: #777;
+    font-size: 12px;
+  }

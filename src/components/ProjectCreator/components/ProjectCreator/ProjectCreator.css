@@ -1,0 +1,99 @@
+.content-container {
+  display: flex;
+  width: 100%;
+  gap: 20px; /* nice space between form and preview */
+  flex: 1;
+  height: 100%;
+}
+.project-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  min-width: 900px;
+  height: 90vh; /* Fixed height for the whole creator */
+  margin: 0 ;
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.creator-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.stepper-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.step-content {
+  flex: 1; /* Step content will expand to fill available space */
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  overflow-y: auto; /* If content is too big, make it scroll inside */
+  min-height: 400px;
+  max-height: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0px; /* no top margin needed */
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #374151;
+  border: 2px solid #cbd5e1;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #f1f5f9;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ai-assistant {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  overflow-y: auto;
+}

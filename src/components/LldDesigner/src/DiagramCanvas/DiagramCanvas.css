@@ -1,0 +1,35 @@
+.lld-diagram-container {
+    overflow: auto;
+    border: 1px solid #ccc;
+    position: relative;
+    flex-grow: 1;
+    background-color: #f8f8f8;
+  }
+  
+  .lld-diagram-canvas {
+    position: relative;
+    width: 2000px;
+    height: 2000px;
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+  }
+  
+  .lld-grid-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .lld-relationships-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: all;
+  }
+  
+  .lld-in-progress-relationship {
+    pointer-events: none;
+  }

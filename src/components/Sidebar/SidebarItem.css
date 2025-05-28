@@ -1,0 +1,30 @@
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .sidebar-item.active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+  
+  .item-label {
+    font-size: 16px;
+    color: #374151;
+  }
+  
