@@ -74,14 +74,14 @@ const LanguageSelector = ({projectData, setProjectData }) => {
       return;
     }
 
-    setSelectedVersion(ver?.langVerCode);
+    setSelectedVersion(ver?.langVersion);
     setIsVersionOpen(false);
 
     if (!selectedLanguage) return;
 
     setProjectData(prev => ({
       ...prev,
-      languageVersion: ver?.langVerCode,
+      languageVersion: ver?.langVersion,
     }));
 
   };
@@ -164,7 +164,7 @@ const LanguageSelector = ({projectData, setProjectData }) => {
             <div className="dropdown-menu">
               {versions.map((ver) => (
                 <div
-                  key={ver?.langVerCode}
+                  key={ver?.langVersion}
                   className="dropdown-item"
                   onClick={() => handleVersionSelect(ver)}
                 >

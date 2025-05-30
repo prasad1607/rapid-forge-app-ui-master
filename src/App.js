@@ -47,7 +47,7 @@ const App = () => {
                 <Sidebar collapsed={sidebarCollapsed} />
                 <main className="main-content">
                   <Routes>
-                    <Route path="/" element={<Navigate to="/dashboard" />} />
+                    <Route path="/" element={<Navigate to="/create_project" />} />
                     <Route path="/dashboard" element={<div>Dashboard Page</div>} />
                     <Route path="/create_project" element={<ProjectCreator />} />
                     <Route path="/lld_designer" element={<ClassDiagramApp />} />

@@ -147,23 +147,6 @@ const BuildToolSelector = ({ projectData, setProjectData }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch build tools on mount
-  // useEffect(() => {
-  //   const loadBuildTools = async () => {
-  //     try {
-  //       const response = await fetchAllBuildTools('LANG_JAVA', 'FRAME_SPRING');
-  //       setBuildTools(response.content || []);
-  //     } catch (err) {
-  //       console.error('Failed to load build tools:', err);
-  //       setError('Failed to load build tools');
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   loadBuildTools();
-  // }, []);
-
 
   useEffect(() => {
     const loadBuildTools = async () => {

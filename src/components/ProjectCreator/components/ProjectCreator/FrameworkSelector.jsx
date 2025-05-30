@@ -76,7 +76,7 @@ const FrameworkSelector = ({ projectData, setProjectData }) => {
 
     setProjectData(prev => ({
       ...prev,
-      frameworkVersion: versionObj.frameVersion
+      frameworkVersion: versionObj.frameVer
     }));
     setIsVersionOpen(false);
   };
@@ -220,7 +220,7 @@ console.log("selectedFramework",selectedFramework)
                       className="dropdown-item"
                       onClick={() => handleVersionSelect(ver)}
                     >
-                      {ver.frameVersion}
+                      {ver.frameVer}
                     </div>
                   ))}
                   {!isFetchingVersions ? (
